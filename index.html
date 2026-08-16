@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="數字合併：滑格同數合併挑戰 2048。" />
+    <title>數字合併</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="top">
+        <div>
+          <h1>數字合併</h1>
+          <p class="tag">滑動合併 · 挑戰 2048</p>
+        </div>
+        <div class="scores">
+          <div class="pill"><span>分數</span><strong id="score">0</strong></div>
+          <div class="pill"><span>最高</span><strong id="best">0</strong></div>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button type="button" id="btn-new" class="primary">新局</button>
+        <p id="status" class="status" role="status">用手指滑動或方向鍵。</p>
+      </div>
+
+      <div id="board" class="board" aria-label="4×4 數字盤"></div>
+
+      <section class="help">
+        <p>相同數字相撞會合體加倍。達到 2048 即勝，可繼續挑戰更高。盤滿且無法移動則出局。</p>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
